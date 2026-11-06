@@ -1,7 +1,8 @@
 # PBO LKS — Portofolio Praktikum REST API Perpustakaan
 
 ## Identitas Mahasiswa
-- **Nama Lengkap** : Muhammad Solihin Tafsir Sri Lintang
+
+- **Nama Lengkap** : Muhamad Sholichin Tafsir Srilintang
 - **NIM** : H1101251016
 - **Kelas** : B
 - **Program Studi** : Sistem Informasi — FMIPA Universitas Tanjungpura
@@ -10,6 +11,7 @@
 - **Repository GitHub** : [https://github.com/MStafsir/pbo-lks-h1101251016-lintang](https://github.com/MStafsir/pbo-lks-h1101251016-lintang)
 
 ## Daftar Pertemuan
+
 - [x] Pertemuan 1 — Setup & Database (Langkah 1 s.d. 5)
 - [x] Pertemuan 2 — Core OOP & CRUD Buku (Langkah 6 s.d. 9)
 - [x] Pertemuan 3 — Validasi, Error Handling & Postman (Langkah 10 s.d. 11)
@@ -19,6 +21,7 @@
 - [x] Pertemuan 7 — Integrasi Penuh & Finalisasi Repository (Langkah 19 s.d. 20)
 
 ## Fitur Utama Proyek
+
 1. **Backend REST API (`rest-api-perpustakaan/`)**:
    - Arsitektur berlapis (Models, Contracts/Interfaces, Repositories, Services, Controllers, Core Router & DI Container) dengan PSR-4 Autoloading dan prinsip SOLID.
    - Endpoint CRUD lengkap untuk `/api/books` dan `/api/categories` beserta validasi input (`422`), penanganan resource tidak ditemukan (`404`), dan dukungan CORS (`204 No Content`).
@@ -29,6 +32,7 @@
 ## Cara Menjalankan Proyek
 
 ### 1. Persiapan Database & Backend (Port 8000)
+
 ```bash
 cd rest-api-perpustakaan
 cp .env.example .env
@@ -38,14 +42,18 @@ php -S localhost:8000 -t public
 ```
 
 ### 2. Menjalankan Frontend (Port 3000)
+
 Buka terminal kedua, lalu jalankan:
+
 ```bash
 cd frontend-perpustakaan
 php -S localhost:3000
 ```
+
 Buka `http://localhost:3000` pada browser.
 
 ## Dokumentasi Screenshot per Pertemuan
+
 - **Pertemuan 1**:
   - [Langkah 1 — Cek Lingkungan](pertemuan-01/langkah-01.png)
   - [Langkah 2 — Struktur Folder & Composer PSR-4](pertemuan-01/langkah-02.png)
