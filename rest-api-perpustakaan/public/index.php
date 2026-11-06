@@ -1,15 +1,15 @@
 <?php
 /**
- * CORS Headers — wajib untuk frontend terpisah.
+ * PERTEMUAN 6 - LANGKAH 16: Konfigurasi Header CORS
+ * Mengizinkan Frontend SPA (localhost:3000) berkomunikasi dengan Backend (localhost:8000).
  * Izinkan request dari origin manapun (development).
- * Untuk production, ganti '*' dengan domain spesifik.
  */
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Accept');
 header('Access-Control-Max-Age: 86400');
 
-// Handle preflight request (OPTIONS)
+// Handle preflight request (OPTIONS) -> kirim 204 No Content
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;

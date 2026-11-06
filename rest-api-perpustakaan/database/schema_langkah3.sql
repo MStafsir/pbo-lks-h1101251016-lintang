@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS perpustakaan
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE perpustakaan;
+
+DROP TABLE IF EXISTS categories;
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(255) NOT NULL,
+    penulis VARCHAR(255) NOT NULL,
+    tahun INT NOT NULL,
+    stok INT NOT NULL DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+INSERT INTO books (id, judul, penulis, tahun, stok) VALUES
+(1, 'Laskar Pelangi', 'Andrea Hirata', 2005, 5),
+(2, 'Bumi Manusia', 'Pramoedya Ananta Toer', 1980, 3);

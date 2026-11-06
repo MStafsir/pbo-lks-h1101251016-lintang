@@ -1,0 +1,6 @@
+/vendor/
+rest-api-perpustakaan/vendor/
+.env
+rest-api-perpustakaan/.env
+.DS_Store
+*.log
